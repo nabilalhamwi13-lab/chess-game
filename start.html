@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Schachspiel - Spielen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .emoji {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1em;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button, a {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .btn-play {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-play:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-github {
+            background: #f0f0f0;
+            color: #333;
+            border: 2px solid #333;
+        }
+
+        .btn-github:hover {
+            background: #333;
+            color: white;
+        }
+
+        .info {
+            background: #f0f7ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .info ul {
+            list-style-position: inside;
+            color: #666;
+        }
+
+        .info li {
+            margin: 8px 0;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>♟️ Schachspiel</h1>
+    <div class="emoji">🎮</div>
+    
+    <p>Willkommen zum erweiterten Schachspiel!</p>
+    <p>Spielen Sie eine komplette Partie mit allen modernen Schachregeln.</p>
+
+    <div class="info">
+        <h3>✨ Features</h3>
+        <ul>
+            <li>♔ Rochade (Castling)</li>
+            <li>🎯 En Passant</li>
+            <li>👑 Schach & Schachmatt-Erkennung</li>
+            <li>📋 Zugverlauf</li>
+            <li>↩️ Zug zurück</li>
+            <li>👸 Bauernumwandlung</li>
+        </ul>
+    </div>
+
+    <div class="buttons">
+        <button class="btn-play" onclick="startGame()">🎮 SPIEL STARTEN</button>
+        <a href="https://github.com/nabilalhamwi13-lab/chess-game" class="btn-github">🐙 GitHub</a>
+    </div>
+
+    <div class="footer">
+        <p>Entwickelt mit ❤️ | Ein interaktives Schachspiel</p>
+    </div>
+</div>
+
+<script>
+function startGame() {
+    window.location.href = './index.html';
+}
+</script>
+
+</body>
+</html>
